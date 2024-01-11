@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package drawing ;import (_a "github.com/unidoc/unioffice";_c "github.com/unidoc/unioffice/color";_da "github.com/unidoc/unioffice/measurement";_aa "github.com/unidoc/unioffice/schema/soo/dml";);func (_dfg ShapeProperties )ensureXfrm (){if _dfg ._fc .Xfrm ==nil {_dfg ._fc .Xfrm =_aa .NewCT_Transform2D ();};};func (_eb LineProperties )SetNoFill (){_eb .clearFill ();_eb ._g .NoFill =_aa .NewCT_NoFillProperties ()};
+package drawing ;import (_a "github.com/ScorpioRen/copy-unioffice";_c "github.com/ScorpioRen/copy-unioffice/color";_da "github.com/ScorpioRen/copy-unioffice/measurement";_aa "github.com/ScorpioRen/copy-unioffice/schema/soo/dml";);func (_dfg ShapeProperties )ensureXfrm (){if _dfg ._fc .Xfrm ==nil {_dfg ._fc .Xfrm =_aa .NewCT_Transform2D ();};};func (_eb LineProperties )SetNoFill (){_eb .clearFill ();_eb ._g .NoFill =_aa .NewCT_NoFillProperties ()};
 
 // SetNumbered controls if bullets are numbered or not.
 func (_fe ParagraphProperties )SetNumbered (scheme _aa .ST_TextAutonumberScheme ){if scheme ==_aa .ST_TextAutonumberSchemeUnset {_fe ._dff .BuAutoNum =nil ;}else {_fe ._dff .BuAutoNum =_aa .NewCT_TextAutonumberBullet ();_fe ._dff .BuAutoNum .TypeAttr =scheme ;};};const (LineJoinRound LineJoin =iota ;LineJoinBevel ;LineJoinMiter ;);

@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package reference ;import (_fb "errors";_g "fmt";_gd "github.com/unidoc/unioffice/spreadsheet/update";_d "regexp";_df "strconv";_fg "strings";);
+package reference ;import (_fb "errors";_g "fmt";_gd "github.com/ScorpioRen/copy-unioffice/spreadsheet/update";_d "regexp";_df "strconv";_fg "strings";);
 
 // Update updates reference to point one of the neighboring columns with respect to the update type after removing a row/column.
 func (_ff *ColumnReference )Update (updateType _gd .UpdateAction )*ColumnReference {switch updateType {case _gd .UpdateActionRemoveColumn :_ede :=_ff ;_ede .ColumnIdx =_ff .ColumnIdx -1;_ede .Column =IndexToColumn (_ede .ColumnIdx );return _ede ;default:return _ff ;};};func _gf (_gae string )(string ,string ,error ){_af :="";_db :=_fg .LastIndex (_gae ,"\u0021");if _db > -1{_af =_gae [:_db ];_gae =_gae [_db +1:];if _af ==""{return "","",_fb .New ("\u0049n\u0076a\u006c\u0069\u0064\u0020\u0073h\u0065\u0065t\u0020\u006e\u0061\u006d\u0065");};};return _af ,_gae ,nil ;};

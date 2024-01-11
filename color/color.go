@@ -11,7 +11,7 @@
 
 // Package color provides color handling structures and functions for use across
 // all of the document types.
-package color ;import (_f "fmt";_c "github.com/unidoc/unioffice";);
+package color ;import (_f "fmt";_c "github.com/ScorpioRen/copy-unioffice";);
 
 // AsRGBAString is used by the various wrappers to return a pointer
 // to a string containing a six digit hex RGB value.

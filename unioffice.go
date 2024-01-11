@@ -26,11 +26,11 @@ spreadsheet.Workbook and presentation.Presentation), the other wrapper types are
 value types with non-pointer methods.  They exist solely to modify and return
 data from one or more XML types.
 
-The packages of interest are github.com/unidoc/unioffice/document,
-unidoc/unioffice/spreadsheet and github.com/unidoc/unioffice/presentation.
+The packages of interest are github.com/ScorpioRen/copy-unioffice/document,
+unidoc/unioffice/spreadsheet and github.com/ScorpioRen/copy-unioffice/presentation.
 
 */
-package unioffice ;import (_d "encoding/xml";_dgg "errors";_c "fmt";_a "github.com/unidoc/unioffice/algo";_bd "log";_g "reflect";_dg "strings";_dc "unicode";);
+package unioffice ;import (_d "encoding/xml";_dgg "errors";_c "fmt";_a "github.com/ScorpioRen/copy-unioffice/algo";_bd "log";_g "reflect";_dg "strings";_dc "unicode";);
 
 // CreateElement creates an element with the given namespace and name. It is
 // used to unmarshal some xsd:any elements to the appropriate concrete type.

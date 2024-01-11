@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package zippkg ;import (_d "archive/zip";_ed "bytes";_e "encoding/xml";_a "fmt";_ge "github.com/unidoc/unioffice";_fe "github.com/unidoc/unioffice/algo";_bcd "github.com/unidoc/unioffice/common/tempstorage";_bc "github.com/unidoc/unioffice/schema/soo/pkg/relationships";_c "io";_gb "path";_g "sort";_b "strings";_fa "time";);
+package zippkg ;import (_d "archive/zip";_ed "bytes";_e "encoding/xml";_a "fmt";_ge "github.com/ScorpioRen/copy-unioffice";_fe "github.com/ScorpioRen/copy-unioffice/algo";_bcd "github.com/ScorpioRen/copy-unioffice/common/tempstorage";_bc "github.com/ScorpioRen/copy-unioffice/schema/soo/pkg/relationships";_c "io";_gb "path";_g "sort";_b "strings";_fa "time";);
 
 // RelationsPathFor returns the relations path for a given filename.
 func RelationsPathFor (path string )string {_bd :=_b .Split (path ,"\u002f");_gd :=_b .Join (_bd [0:len (_bd )-1],"\u002f");_daf :=_bd [len (_bd )-1];_gd +="\u002f_\u0072\u0065\u006c\u0073\u002f";_daf +="\u002e\u0072\u0065l\u0073";return _gd +_daf ;};

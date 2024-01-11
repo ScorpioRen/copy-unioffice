@@ -13,7 +13,7 @@
 // OOXML document formats.
 //
 // Package common contains common properties used by the subpackages.
-package common ;import (_b "archive/zip";_c "bytes";_bf "encoding/xml";_fb "fmt";_cce "github.com/unidoc/unioffice";_be "github.com/unidoc/unioffice/common/tempstorage";_db "github.com/unidoc/unioffice/common/tempstorage/diskstore";_gc "github.com/unidoc/unioffice/measurement";_dde "github.com/unidoc/unioffice/schema/soo/dml";_ccg "github.com/unidoc/unioffice/schema/soo/ofc/custom_properties";_cc "github.com/unidoc/unioffice/schema/soo/ofc/docPropsVTypes";_bc "github.com/unidoc/unioffice/schema/soo/ofc/extended_properties";_da "github.com/unidoc/unioffice/schema/soo/pkg/content_types";_ce "github.com/unidoc/unioffice/schema/soo/pkg/metadata/core_properties";_eg "github.com/unidoc/unioffice/schema/soo/pkg/relationships";_edc "github.com/unidoc/unioffice/zippkg";_ed "image";_ "image/gif";_ "image/jpeg";_ "image/png";_e "os";_d "reflect";_afe "regexp";_dd "strconv";_g "strings";_cd "time";);func (_gfcc CustomProperties )SetPropertyAsVector (name string ,vector *_cc .Vector ){_dge :=_gfcc .getNewProperty (name );_dge .Vector =vector ;_gfcc .setOrReplaceProperty (_dge );};
+package common ;import (_b "archive/zip";_c "bytes";_bf "encoding/xml";_fb "fmt";_cce "github.com/ScorpioRen/copy-unioffice";_be "github.com/ScorpioRen/copy-unioffice/common/tempstorage";_db "github.com/ScorpioRen/copy-unioffice/common/tempstorage/diskstore";_gc "github.com/ScorpioRen/copy-unioffice/measurement";_dde "github.com/ScorpioRen/copy-unioffice/schema/soo/dml";_ccg "github.com/ScorpioRen/copy-unioffice/schema/soo/ofc/custom_properties";_cc "github.com/ScorpioRen/copy-unioffice/schema/soo/ofc/docPropsVTypes";_bc "github.com/ScorpioRen/copy-unioffice/schema/soo/ofc/extended_properties";_da "github.com/ScorpioRen/copy-unioffice/schema/soo/pkg/content_types";_ce "github.com/ScorpioRen/copy-unioffice/schema/soo/pkg/metadata/core_properties";_eg "github.com/ScorpioRen/copy-unioffice/schema/soo/pkg/relationships";_edc "github.com/ScorpioRen/copy-unioffice/zippkg";_ed "image";_ "image/gif";_ "image/jpeg";_ "image/png";_e "os";_d "reflect";_afe "regexp";_dd "strconv";_g "strings";_cd "time";);func (_gfcc CustomProperties )SetPropertyAsVector (name string ,vector *_cc .Vector ){_dge :=_gfcc .getNewProperty (name );_dge .Vector =vector ;_gfcc .setOrReplaceProperty (_dge );};
 
 // ImageFromStorage reads an image using the currently set
 // temporary storage mechanism (see tempstorage). You can also
@@ -344,7 +344,7 @@ func (_bfbd TableStyles )X ()*_dde .TblStyleLst {return _bfbd ._abc };
 type Relationships struct{_ccd *_eg .Relationships };const Version ="\u0031\u002e\u0038.\u0030";func (_gcf CustomProperties )SetPropertyAsBlob (name ,blob string ){_bde :=_gcf .getNewProperty (name );_bde .Blob =&blob ;_gcf .setOrReplaceProperty (_bde );};
 
 // Company returns the name of the company that created the document.
-// For unioffice created documents, it defaults to github.com/unidoc/unioffice
+// For unioffice created documents, it defaults to github.com/ScorpioRen/copy-unioffice
 func (_gfb AppProperties )Company ()string {if _gfb ._bfa .Company !=nil {return *_gfb ._bfa .Company ;};return "";};
 
 // Path returns the path to an image file, if any.
@@ -354,7 +354,7 @@ func (_cdgf ImageRef )Path ()string {return _cdgf ._gff .Path };func (_edd Custo
 func NewCustomProperties ()CustomProperties {return CustomProperties {_bgf :_ccg .NewProperties ()}};
 
 // Application returns the name of the application that created the document.
-// For unioffice created documents, it defaults to github.com/unidoc/unioffice
+// For unioffice created documents, it defaults to github.com/ScorpioRen/copy-unioffice
 func (_cadc AppProperties )Application ()string {if _cadc ._bfa .Application !=nil {return *_cadc ._bfa .Application ;};return "";};
 
 // SetCompany sets the name of the company that created the document.

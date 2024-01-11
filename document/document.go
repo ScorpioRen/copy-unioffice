@@ -22,7 +22,7 @@ Example:
 	run.SetText("foo")
 	doc.SaveToFile("foo.docx")
 */
-package document ;import (_b "archive/zip";_dg "bytes";_cd "errors";_cfb "fmt";_d "github.com/unidoc/unioffice";_fb "github.com/unidoc/unioffice/color";_bf "github.com/unidoc/unioffice/common";_be "github.com/unidoc/unioffice/common/license";_ca "github.com/unidoc/unioffice/common/tempstorage";_gc "github.com/unidoc/unioffice/measurement";_cde "github.com/unidoc/unioffice/schema/soo/dml";_bc "github.com/unidoc/unioffice/schema/soo/dml/picture";_dc "github.com/unidoc/unioffice/schema/soo/ofc/sharedTypes";_df "github.com/unidoc/unioffice/schema/soo/pkg/relationships";_ba "github.com/unidoc/unioffice/schema/soo/wml";_gg "github.com/unidoc/unioffice/zippkg";_ec "image";_cf "image/jpeg";_ee "io";_ga "log";_e "math/rand";_a "os";_gaa "path/filepath";_f "strings";_c "unicode";);
+package document ;import (_b "archive/zip";_dg "bytes";_cd "errors";_cfb "fmt";_d "github.com/ScorpioRen/copy-unioffice";_fb "github.com/ScorpioRen/copy-unioffice/color";_bf "github.com/ScorpioRen/copy-unioffice/common";_be "github.com/ScorpioRen/copy-unioffice/common/license";_ca "github.com/ScorpioRen/copy-unioffice/common/tempstorage";_gc "github.com/ScorpioRen/copy-unioffice/measurement";_cde "github.com/ScorpioRen/copy-unioffice/schema/soo/dml";_bc "github.com/ScorpioRen/copy-unioffice/schema/soo/dml/picture";_dc "github.com/ScorpioRen/copy-unioffice/schema/soo/ofc/sharedTypes";_df "github.com/ScorpioRen/copy-unioffice/schema/soo/pkg/relationships";_ba "github.com/ScorpioRen/copy-unioffice/schema/soo/wml";_gg "github.com/ScorpioRen/copy-unioffice/zippkg";_ec "image";_cf "image/jpeg";_ee "io";_ga "log";_e "math/rand";_a "os";_gaa "path/filepath";_f "strings";_c "unicode";);
 
 // X returns the inner wrapped XML type.
 func (_cdgg Settings )X ()*_ba .Settings {return _cdgg ._dbedb };
@@ -1091,7 +1091,7 @@ func (_fecdc TableBorders )SetAll (t _ba .ST_Border ,c _fb .Color ,thickness _gc
 func (_eaga ParagraphStyleProperties )SetContextualSpacing (b bool ){if !b {_eaga ._gdb .ContextualSpacing =nil ;}else {_eaga ._gdb .ContextualSpacing =_ba .NewCT_OnOff ();};};
 
 // SetStrict is a shortcut for document.SetConformance,
-// as one of these values from github.com/unidoc/unioffice/schema/soo/ofc/sharedTypes:
+// as one of these values from github.com/ScorpioRen/copy-unioffice/schema/soo/ofc/sharedTypes:
 // ST_ConformanceClassUnset, ST_ConformanceClassStrict or ST_ConformanceClassTransitional.
 func (_cgag Document )SetStrict (strict bool ){if strict {_cgag ._dadc .ConformanceAttr =_dc .ST_ConformanceClassStrict ;}else {_cgag ._dadc .ConformanceAttr =_dc .ST_ConformanceClassTransitional ;};};
 
@@ -1359,7 +1359,7 @@ func (_ffea Paragraph )AddFootnote (text string )Footnote {var _cdg int64 ;if _f
 func (_babb TableProperties )SetCellSpacing (m _gc .Distance ){_babb ._efeg .TblCellSpacing =_ba .NewCT_TblWidth ();_babb ._efeg .TblCellSpacing .TypeAttr =_ba .ST_TblWidthDxa ;_babb ._efeg .TblCellSpacing .WAttr =&_ba .ST_MeasurementOrPercent {};_babb ._efeg .TblCellSpacing .WAttr .ST_DecimalNumberOrPercent =&_ba .ST_DecimalNumberOrPercent {};_babb ._efeg .TblCellSpacing .WAttr .ST_DecimalNumberOrPercent .ST_UnqualifiedPercentage =_d .Int64 (int64 (m /_gc .Dxa ));};
 
 // SetConformance sets conformance attribute of the document
-// as one of these values from github.com/unidoc/unioffice/schema/soo/ofc/sharedTypes:
+// as one of these values from github.com/ScorpioRen/copy-unioffice/schema/soo/ofc/sharedTypes:
 // ST_ConformanceClassUnset, ST_ConformanceClassStrict or ST_ConformanceClassTransitional.
 func (_ffcf Document )SetConformance (conformanceAttr _dc .ST_ConformanceClass ){_ffcf ._dadc .ConformanceAttr =conformanceAttr ;};
 

@@ -11,7 +11,7 @@
 
 // Package memstore implements tempStorage interface
 // by using memory as a storage
-package memstore ;import (_f "encoding/hex";_e "errors";_c "fmt";_cb "github.com/unidoc/unioffice/common/tempstorage";_a "io";_be "io/ioutil";_ae "math/rand";_g "sync";);func _cff (_bd int )(string ,error ){_ggd :=make ([]byte ,_bd );if _ ,_ga :=_ae .Read (_ggd );_ga !=nil {return "",_ga ;};return _f .EncodeToString (_ggd ),nil ;};type memFile struct{_d *memDataCell ;_cg int64 ;};
+package memstore ;import (_f "encoding/hex";_e "errors";_c "fmt";_cb "github.com/ScorpioRen/copy-unioffice/common/tempstorage";_a "io";_be "io/ioutil";_ae "math/rand";_g "sync";);func _cff (_bd int )(string ,error ){_ggd :=make ([]byte ,_bd );if _ ,_ga :=_ae .Read (_ggd );_ga !=nil {return "",_ga ;};return _f .EncodeToString (_ggd ),nil ;};type memFile struct{_d *memDataCell ;_cg int64 ;};
 
 // Open returns tempstorage File object by name
 func (_dg *memStorage )Open (path string )(_cb .File ,error ){_af ,_gfe :=_dg ._egg .Load (path );if !_gfe {return nil ,_e .New (_c .Sprintf ("\u0043\u0061\u006eno\u0074\u0020\u006f\u0070\u0065\u006e\u0020\u0074\u0068\u0065\u0020\u0066\u0069\u006c\u0065\u0020\u0025\u0073",path ));};return &memFile {_d :_af .(*memDataCell )},nil ;};

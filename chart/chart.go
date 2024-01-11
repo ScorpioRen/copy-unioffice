@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package chart ;import (_dd "fmt";_a "github.com/unidoc/unioffice";_eg "github.com/unidoc/unioffice/color";_ae "github.com/unidoc/unioffice/drawing";_b "github.com/unidoc/unioffice/measurement";_de "github.com/unidoc/unioffice/schema/soo/dml";_d "github.com/unidoc/unioffice/schema/soo/dml/chart";_g "math/rand";);
+package chart ;import (_dd "fmt";_a "github.com/ScorpioRen/copy-unioffice";_eg "github.com/ScorpioRen/copy-unioffice/color";_ae "github.com/ScorpioRen/copy-unioffice/drawing";_b "github.com/ScorpioRen/copy-unioffice/measurement";_de "github.com/ScorpioRen/copy-unioffice/schema/soo/dml";_d "github.com/ScorpioRen/copy-unioffice/schema/soo/dml/chart";_g "math/rand";);
 
 // SetText sets the series text.
 func (_egcc RadarChartSeries )SetText (s string ){_egcc ._eaffe .Tx =_d .NewCT_SerTx ();_egcc ._eaffe .Tx .Choice .V =&s ;};

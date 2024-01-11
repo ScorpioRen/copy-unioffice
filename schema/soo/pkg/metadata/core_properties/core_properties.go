@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package core_properties ;import (_d "encoding/xml";_da "fmt";_b "github.com/unidoc/unioffice";_a "time";);
+package core_properties ;import (_d "encoding/xml";_da "fmt";_b "github.com/ScorpioRen/copy-unioffice";_a "time";);
 
 // ValidateWithPath validates the CT_Keyword and its children, prefixing error messages with path
 func (_abb *CT_Keyword )ValidateWithPath (path string )error {return nil };
